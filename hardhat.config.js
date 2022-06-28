@@ -30,7 +30,16 @@ module.exports = {
             rinkeby: ETHERSCAN_API_KEY,
         },
     },
-    solidity: "0.8.8",
+    solidity: {
+        compilers: [
+            {
+                version: "0.8.8",
+            },
+            {
+                version: "0.6.6",
+            },
+        ],
+    },
     gasReporter: {
         enabled: false,
         currency: "USD",
